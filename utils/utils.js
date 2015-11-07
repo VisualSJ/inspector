@@ -145,7 +145,7 @@ var buildNode = function ( node, clsList, path, useArray ) {
         _buildProp( node, type, k, clsList, path, useArray );
     }
 
-    // ÓÃÓÚÏÔÊ¾ÔÚÒ³ÃæÉÏµÄÃû×Ö
+    // ç”¨äºæ˜¾ç¤ºåœ¨é¡µé¢ä¸Šçš„åå­—
     if (clsList[type] && clsList[type].name) {
         node.__displayName__ = clsList[type].name;
     } else {
