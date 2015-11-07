@@ -144,6 +144,13 @@ var buildNode = function ( node, clsList, path, useArray ) {
         //
         _buildProp( node, type, k, clsList, path, useArray );
     }
+
+    // 用于显示在页面上的名字
+    if (clsList[type] && clsList[type].name) {
+        node.__displayName__ = clsList[type].name;
+    } else {
+        node.__displayName__ = type;
+    }
 };
 
 var normalizePath = function ( path ) {
